@@ -57,7 +57,7 @@ function cellPredictions() {
         pccs.push([j, pcc, curRating, curRowAvg]);
       }
     }
-    let predValue = neighbours(curUserAvg, pccs, 2); //2 represents num of neighbours
+    let predValue = neighbours(curUserAvg, pccs, 5); //5 represents num of neighbours
     console.log(predValue, "For row", i);
     matrix.set(cell[0], cell[1], predValue);
   }
